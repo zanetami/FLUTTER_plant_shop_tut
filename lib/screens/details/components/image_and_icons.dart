@@ -7,9 +7,11 @@ class ImageAndIcons extends StatelessWidget {
   const ImageAndIcons({
     Key key,
     @required this.size,
+    this.imageUrl,
   }) : super(key: key);
 
   final Size size;
+  final String imageUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -64,9 +66,9 @@ class ImageAndIcons extends StatelessWidget {
                   )
                 ],
                 image: DecorationImage(
-                  alignment: Alignment.centerLeft,
+                  alignment: Alignment.center,
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/images/img.png'),
+                  image: AssetImage(imageUrl),
                 ),
               ),
             ),

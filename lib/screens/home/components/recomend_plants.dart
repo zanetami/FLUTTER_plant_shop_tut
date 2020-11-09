@@ -24,7 +24,12 @@ class RecomendsPlants extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => DetailsScreen(
+                    imageUrl: 'assets/images/image_1.png',
+                    title: 'Samantha',
+                    country: 'Russia',
+                    price: 440,
+                  ),
                 ),
               );
             },
@@ -38,7 +43,12 @@ class RecomendsPlants extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => DetailsScreen(
+                    imageUrl: 'assets/images/image_2.png',
+                    title: 'Angelica',
+                    country: 'Poland',
+                    price: 560,
+                  ),
                 ),
               );
             },
@@ -52,7 +62,12 @@ class RecomendsPlants extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => DetailsScreen(
+                    imageUrl: 'assets/images/image_3.png',
+                    title: 'Rachel',
+                    country: 'USA',
+                    price: 275,
+                  ),
                 ),
               );
             },
